@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section 1: Display all items -->
+        <div class="section" id="item-list">
+            <h2>Available Items</h2>
+            <div class="items">
+                <!-- Items will be loaded here dynamically -->
+            </div>
+        </div>
+
+        <!-- Section 2: Special Offers -->
+        <div class="section" id="special-offer-list">
+            <h2>Special Offers</h2>
+            <div class="special-offers">
+                <!-- Special offer items will be loaded here dynamically -->
+            </div>
+        </div>
+
+        <!-- Section 3: Bill Summary -->
+        <div class="section" id="bill-summary">
+            <h2>Bill Summary</h2>
+            <div class="bill-items">
+                <!-- Bill items will be displayed here -->
+            </div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Modal for showing checkout bill details -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Checkout Summary</h2>
+            <table id="checkout-bill" class="checkout-table">
+                <!-- Bill table will be shown here -->
+            </table>
+            <button onclick="window.print()">Print Bill</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
